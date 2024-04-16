@@ -1,7 +1,12 @@
+---
+import { Image } from "astro:assets";
+import imgHeader from "../assets/img-mountain-hero.webp"
+---
+
 <header class="header">
-  <img
+  <Image
     class="header_img"
-    src="/src/assets/img-mountain-hero.webp"
+    src={imgHeader}
     alt="im-he$#@-heax"
   />
 
@@ -21,7 +26,7 @@
           </li>
           <li>
             <a class="social_link" href="#">
-              <img
+              <Image
                 width="30"
                 height="30"
                 src="https://img.icons8.com/ios/50/fafafa/instagram-new--v1.png"
