@@ -5,6 +5,7 @@ import { Image } from "astro:assets";
 <footer class="footer flex-center column">
   <div class="footer_container flex-center column">
     <Image
+      loading="lazy"
       width="50"
       height="50"
       src="https://img.icons8.com/ios/50/fafafa/mountain.png"
@@ -35,18 +36,23 @@ import { Image } from "astro:assets";
   <div class="footer_menu flex-center column">
     <h3>More on MNTN</h3>
     <ul class="footer_links flex-center column">
-        <li>
-          <p>The team</p>
-        </li>
-        <li>
-          <p>Jobs</p>
-        </li>
-        <li>
-          <p>Press</p>
-        </li>
-      </ul>
+      <li>
+        <p>The team</p>
+      </li>
+      <li>
+        <p>Jobs</p>
+      </li>
+      <li>
+        <p>Press</p>
+      </li>
+    </ul>
   </div>
-  <p class="footer_copyright">2024 Inspired Web Design. All credits to <a href="https://webdesignmastery.github.io/MNTN_13-02-24/" target="_blank">Web Design Mastery</a></p>
+  <p class="footer_copyright">
+    2024 Inspired Web Design. All credits to <a
+      href="https://webdesignmastery.github.io/MNTN_13-02-24/"
+      target="_blank">Web Design Mastery</a
+    >
+  </p>
 </footer>
 
 <style>
@@ -59,7 +65,6 @@ import { Image } from "astro:assets";
 
   .footer > * {
     width: 95%;
- 
   }
 
   .footer_container {
@@ -72,47 +77,47 @@ import { Image } from "astro:assets";
     color: var(--white);
   }
 
-  .footer_menu{
+  .footer_menu {
     gap: 2rem;
   }
 
-  .footer_menu h3{
+  .footer_menu h3 {
     text-align: center;
     color: var(--orange);
     font-weight: 800;
     font-size: 2.7rem;
   }
 
-  .footer_links{
+  .footer_links {
     gap: 1.5rem;
     font-size: 1.6rem;
     color: var(--white);
   }
 
-  .footer_copyright{
+  .footer_copyright {
     text-align: center;
     line-height: 4rem;
     color: var(--white);
   }
 
-  .footer_copyright a{
+  .footer_copyright a {
     color: var(--orange);
     font-weight: 700;
   }
 
   @media (min-width: 900px) {
-      .footer{
-        align-items: self-start;
-        flex-direction: row;
-      }
+    .footer {
+      align-items: self-start;
+      flex-direction: row;
+    }
 
-      .footer > * {
-        width: 15%;
-      }
+    .footer > * {
+      width: 15%;
+    }
 
-      .footer_container p,
-      .footer_copyright{
-        text-align: left;
-      }
+    .footer_container p,
+    .footer_copyright {
+      text-align: left;
+    }
   }
 </style>

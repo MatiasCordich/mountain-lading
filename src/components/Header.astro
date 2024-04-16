@@ -1,10 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import imgHeader from "../assets/img-mountain-hero.webp"
+import imgHeader from "../assets/img-mountain-hero.webp";
 ---
 
 <header class="header">
   <Image
+    loading="lazy"
     class="header_img"
     src={imgHeader}
     alt="im-he$#@-heax"
@@ -16,7 +17,8 @@ import imgHeader from "../assets/img-mountain-hero.webp"
         <ul class="social_links flex-center column">
           <li>
             <a class="social_link" href="#">
-              <img
+              <Image
+                loading="lazy"
                 width="30"
                 height="30"
                 src="https://img.icons8.com/ios-filled/50/fafafa/twitterx--v1.png"
@@ -27,6 +29,7 @@ import imgHeader from "../assets/img-mountain-hero.webp"
           <li>
             <a class="social_link" href="#">
               <Image
+                loading="lazy"
                 width="30"
                 height="30"
                 src="https://img.icons8.com/ios/50/fafafa/instagram-new--v1.png"
@@ -44,7 +47,8 @@ import imgHeader from "../assets/img-mountain-hero.webp"
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <a href="#about" class="btn_scrolldown flex-center"
-          >Scroll down <img
+          >Scroll down <Image
+            loading="lazy"
             width="25"
             height="25"
             src="https://img.icons8.com/ios/ffebb2/long-arrow-down.png"
@@ -101,8 +105,6 @@ import imgHeader from "../assets/img-mountain-hero.webp"
     color: var(--yellow);
     font-weight: 600;
   }
-
-
 
   .t-line {
     width: 6rem;
