@@ -1,0 +1,175 @@
+<header class="header">
+  <img
+    class="header_img"
+    src="/src/assets/img-mountain-hero.webp"
+    alt="im-he$#@-heax"
+  />
+
+  <div class="header_shadow">
+    <div class="header_container flex-center column">
+      <aside class="header_social">
+        <ul class="social_links flex-center column">
+          <li>
+            <a class="social_link" href="#">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-filled/50/fafafa/twitterx--v1.png"
+                alt="twitterx--v1"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="social_link" href="#">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios/50/fafafa/instagram-new--v1.png"
+                alt="instagram-new--v1"
+              />
+            </a>
+          </li>
+        </ul>
+        <div class="v-line"></div>
+      </aside>
+      <main class="header_section">
+        <h3><div class="t-line"></div> A HIKING GUIDE</h3>
+        <h1>Be Preapred For The Mountains And Beyond!</h1>
+        <p class="header_text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <a href="#about" class="btn_scrolldown flex-center"
+          >Scroll down <img
+            width="25"
+            height="25"
+            src="https://img.icons8.com/ios/ffebb2/long-arrow-down.png"
+            alt="long-arrow-down"
+          /></a
+        >
+      </main>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+  }
+
+  .header_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .header_shadow {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 9;
+  }
+
+  .header_container {
+    width: 95%;
+    margin-top: 10rem;
+  }
+
+  .header_section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+  }
+
+  .header_section h3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 100%;
+    width: 100%;
+    color: var(--yellow);
+    font-weight: 600;
+  }
+
+
+
+  .t-line {
+    width: 6rem;
+    background: var(--yellow);
+    height: 0.2rem;
+  }
+
+  .header_section h1 {
+    font-size: 5rem;
+    color: var(--white);
+    max-width: 100rem;
+    width: 100%;
+    font-weight: 800;
+    line-height: 7rem;
+  }
+
+  .header_social {
+    display: none;
+  }
+
+  .header_text {
+    max-width: 60rem;
+    width: 100%;
+    font-weight: 500;
+    color: var(--white);
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .btn_scrolldown {
+    cursor: pointer;
+    width: fit-content;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--yellow);
+  }
+
+  .btn_scrolldown:hover {
+    color: var(--yellow);
+    transition: all 0.6s;
+  }
+
+  @media (min-width: 900px) {
+    .header_container {
+      flex-direction: row;
+      gap: 1rem;
+      width: 70%;
+    }
+
+    .header_social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 20%;
+      height: 100%;
+    }
+
+    .social_links {
+      gap: 1rem;
+    }
+
+    .v-line {
+      width: 0.2rem;
+      height: 20rem;
+      background-color: #fafafa;
+    }
+
+    .header_section h1 {
+      font-size: 4.5vw;
+      line-height: normal;
+    }
+  }
+</style>

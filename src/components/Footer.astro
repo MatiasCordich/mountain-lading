@@ -1,0 +1,117 @@
+---
+import { Image } from "astro:assets";
+---
+
+<footer class="footer flex-center column">
+  <div class="footer_container flex-center column">
+    <Image
+      width="50"
+      height="50"
+      src="https://img.icons8.com/ios/50/fafafa/mountain.png"
+      alt="mon-423-e$%@c"
+    />
+    <p>Get out there & discover your next slope, mountains & destination!</p>
+  </div>
+  <div class="footer_menu flex-center column">
+    <h3>More on The Blog</h3>
+    <ul class="footer_links flex-center column">
+      <li>
+        <p>About MNTN</p>
+      </li>
+      <li>
+        <p>Contributors & Writers</p>
+      </li>
+      <li>
+        <p>Write For Us</p>
+      </li>
+      <li>
+        <p>AContact Us</p>
+      </li>
+      <li>
+        <p>Privacy Policy</p>
+      </li>
+    </ul>
+  </div>
+  <div class="footer_menu flex-center column">
+    <h3>More on MNTN</h3>
+    <ul class="footer_links flex-center column">
+        <li>
+          <p>The team</p>
+        </li>
+        <li>
+          <p>Jobs</p>
+        </li>
+        <li>
+          <p>Press</p>
+        </li>
+      </ul>
+  </div>
+  <p class="footer_copyright">2024 Inspired Web Design. All credits to <a href="https://webdesignmastery.github.io/MNTN_13-02-24/" target="_blank">Web Design Mastery</a></p>
+</footer>
+
+<style>
+  .footer {
+    width: 100%;
+    margin-top: 20rem;
+    gap: 4rem;
+    padding: 2rem;
+  }
+
+  .footer > * {
+    width: 95%;
+ 
+  }
+
+  .footer_container {
+    gap: 2rem;
+  }
+
+  .footer_container p {
+    text-align: center;
+    line-height: 4rem;
+    color: var(--white);
+  }
+
+  .footer_menu{
+    gap: 2rem;
+  }
+
+  .footer_menu h3{
+    color: var(--orange);
+    font-weight: 800;
+    font-size: 2.7rem;
+  }
+
+  .footer_links{
+    gap: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--white);
+  }
+
+  .footer_copyright{
+    text-align: center;
+    line-height: 4rem;
+    color: var(--white);
+  }
+
+  .footer_copyright a{
+    color: var(--orange);
+    font-weight: 700;
+  }
+
+  @media (min-width: 900px) {
+      .footer{
+        align-items: self-start;
+        flex-direction: row;
+      }
+
+      .footer > * {
+        width: 15%;
+      }
+
+      .footer_container p,
+      .footer_copyright{
+        text-align: left;
+      }
+  }
+</style>
