@@ -4,13 +4,16 @@ import { Image } from "astro:assets";
 
 <nav class="navbar flex-center column">
   <div class="navbar_container-1">
-    <Image
+    <a href="/">
+      <Image
       loading="lazy"
       width="50"
       height="50"
       src="https://img.icons8.com/ios/50/fafafa/mountain.png"
       alt="mon-423-e$%@c"
     />
+    </a>
+    
     <button id="btn_menu" class="navbar_btn-menu">
       <Image
         loading="lazy"
@@ -25,13 +28,13 @@ import { Image } from "astro:assets";
   <div id="menu" class="navbar_container-2 flex-center column">
     <ul class="navbar_menu flex-center column">
       <li class="navbar_links">
-        <p>About Us</p>
+        <a href="/About">About Us</a>
       </li>
       <li class="navbar_links">
-        <p>Equipment</p>
+        <a href="/Equipment">Equipment</a>
       </li>
       <li class="navbar_links">
-        <p>Contact</p>
+        <a href="/Contact">Contact</a>
       </li>
     </ul>
     <p class="btn_register">
@@ -107,6 +110,15 @@ import { Image } from "astro:assets";
 
   .navbar_menu {
     gap: 7rem;
+  }
+
+  .navbar_links a {
+    color: var(--white);
+  }
+
+  .navbar_links a:hover{
+    transition: all .5s;
+    color: var(--yellow);
   }
 
   .btn_register {
