@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import img05 from "../assets/img-05.jpg";
 import { Image } from "astro:assets";
+import img06 from "../assets/img-06.webp";
 ---
 
 <Layout title="MTNT">
@@ -14,7 +15,9 @@ import { Image } from "astro:assets";
       <div class="header_about-container">
         <h2>More than 10 years of experience in trekking.</h2>
         <p>
-          More than 10 years of experience endorse us in the field of safety for adventures. Embark on an adventure and enjoy an optimal experience for a lifetime, exploring places known by our experts.
+          More than 10 years of experience endorse us in the field of safety for
+          adventures. Embark on an adventure and enjoy an optimal experience for
+          a lifetime, exploring places known by our experts.
         </p>
       </div>
       <button class="btn_scrolldown">
@@ -27,6 +30,13 @@ import { Image } from "astro:assets";
         />
       </button>
     </header>
+    <main class="about_container flex-center column">
+      <h1>
+        <div class="line"></div>
+        Our passion for trekking.
+      </h1>
+      <section class="about_content"></section>
+    </main>
     <Footer />
   </div>
 </Layout>
@@ -37,6 +47,7 @@ import { Image } from "astro:assets";
     width: 95%;
     height: 100svh;
     margin: 0 auto;
+    gap: 2rem;
   }
 
   .img-about-header {
@@ -46,6 +57,7 @@ import { Image } from "astro:assets";
     max-width: 120rem;
     height: 80rem;
     border-radius: 0.6rem;
+    display: none;
   }
 
   .header_about-container {
@@ -55,9 +67,7 @@ import { Image } from "astro:assets";
     border-radius: 0.6rem;
     max-width: 70rem;
     width: 100%;
-    position: absolute;
-    top: 14rem;
-
+    margin-top: 8rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
@@ -75,18 +85,50 @@ import { Image } from "astro:assets";
   }
 
   .btn_scrolldown {
-    position: absolute;
-    bottom: -3rem;
     width: 9rem;
     height: 9rem;
     border-radius: 0.4rem;
     background-color: var(--orange);
   }
 
+  .about_container {
+    margin-top: 10rem;
+    border: 1px solid rebeccapurple;
+    gap: 2rem;
+  }
+
+  .about_container h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    color: var(--orange);
+  }
+
+  .about_content {
+    border: 1px solid rebeccapurple;
+    width: 95%;
+  }
+
+  @media (min-width: 600px) {
+  
+    .btn_scrolldown{
+      position: absolute;
+      bottom: -5rem;
+    }
+
+    .header_about-container {
+      position: absolute;
+      top: 2rem;
+    }
+    .img-about-header {
+      display: block;
+    }
+  }
+
   @media (min-width: 900px) {
     .about_header {
       margin: 0 auto;
       align-items: end;
+      width: 85%;
     }
 
     .img-about-header {
@@ -94,20 +136,27 @@ import { Image } from "astro:assets";
     }
 
     .header_about-container {
-      left: 19%;
+      top: 4rem;
+      left: 10rem;
     }
 
     .header_about-container h2 {
-      line-height: 6rem;
+      line-height: 8rem;
       font-size: 6rem;
     }
 
-    .header_about-container p{
+    .header_about-container p {
       font-size: 1.8rem;
+
     }
 
-    .btn_scrolldown{
+    .btn_scrolldown {
+      bottom: -3rem;
       right: 2rem;
+    }
+
+    .about_container h1 {
+      font-size: 6vw;
     }
   }
 </style>
